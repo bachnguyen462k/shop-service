@@ -3,7 +3,7 @@ package com.example.demo.controller.category;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/category")
+@RequestMapping("/api/category")
 @RestController
 public class CategoryRestController {
 //    private final TagService tagService;

@@ -60,12 +60,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter implemen
         http.addFilterBefore(new JWTAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
         http.addFilterBefore(new CustomFilter(), UsernamePasswordAuthenticationFilter.class);
         http.authorizeRequests()
-                .antMatchers(GET, "/profiles/*").permitAll()
-                .antMatchers(GET, "/articles/**").permitAll()
-                .antMatchers(GET, "/tags/**").permitAll()
-                .antMatchers(GET, "/actuator/**").permitAll()
-                .antMatchers(GET, "/check-connection-DB").permitAll()
-                .antMatchers(POST, "/users/login").permitAll()
+                .antMatchers(GET, "/api/profiles/*").permitAll()
+                .antMatchers(GET, "/api/articles/**").permitAll()
+                .antMatchers(GET, "/api/tags/**").permitAll()
+                .antMatchers(GET, "/api/actuator/**").permitAll()
+                .antMatchers(GET, "/api/check-connection-DB").permitAll()
+                .antMatchers(POST, "/api/users/login").permitAll()
+                .antMatchers(POST, "/api/users").permitAll()
                 .anyRequest().authenticated();
     }
 

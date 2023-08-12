@@ -15,6 +15,7 @@ import static com.example.demo.controller.user.UserModel.fromUserAndToken;
 import static org.springframework.http.ResponseEntity.of;
 
 @RestController
+@RequestMapping("/api")
 class UserRestController {
 
     private final UserService userService;

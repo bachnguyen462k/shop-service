@@ -11,6 +11,7 @@ import javax.validation.Valid;
 import static java.util.Optional.ofNullable;
 
 @RestController
+@RequestMapping("/api")
 class CommentRestController {
 
     private final CommentService commentService;

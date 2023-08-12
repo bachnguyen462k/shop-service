@@ -16,6 +16,7 @@ import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.ResponseEntity.of;
 
 @RestController
+@RequestMapping("/api")
 class ArticleRestController {
 
     private final ArticleService articleService;

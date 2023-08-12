@@ -13,7 +13,7 @@ import static com.example.demo.controller.user.ProfileModel.fromProfile;
 import static java.util.Optional.ofNullable;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 
-@RequestMapping("/profiles")
+@RequestMapping("/api/profiles")
 @RestController
 class ProfileRestController {
 

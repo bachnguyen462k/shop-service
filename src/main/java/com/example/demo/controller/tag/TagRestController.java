@@ -9,7 +9,7 @@ import java.util.Objects;
 
 import static java.util.stream.Collectors.toSet;
 
-@RequestMapping("/tags")
+@RequestMapping("/api/tags")
 @RestController
 class TagRestController {
 
